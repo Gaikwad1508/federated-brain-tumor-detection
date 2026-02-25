@@ -1,0 +1,11 @@
+# Ignore datasets
+data_raw/
+federated_dataset/
+temp/
+
+# Ignore Python caches
+__pycache__/
+*.pyc
+
+# Ignore environment files
+.env
