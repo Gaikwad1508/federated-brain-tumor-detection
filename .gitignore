@@ -1,11 +1,15 @@
-# Ignore datasets
+# Ignore large datasets
 data_raw/
 federated_dataset/
-temp/
+Testing/
 
-# Ignore Python caches
+# Ignore Python environment and cache
 __pycache__/
-*.pyc
-
-# Ignore environment files
+*.py[cod]
+.venv/
+venv/
 .env
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
