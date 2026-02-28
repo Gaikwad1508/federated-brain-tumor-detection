@@ -1,8 +1,7 @@
 
-
 # 🧠 Federated Brain Tumor Classification at the Edge
 
-[![Hugging Face Space](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](YOUR_HUGGINGFACE_SPACE_LINK_HERE)
+[![Hugging Face Space](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/Abhishek1508/federated-brain-tumor-ai)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/release/python-390/)
 [![Framework: Flower](https://img.shields.io/badge/Federated_Learning-Flower-orange)](https://flower.ai/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.10.0-FF6F00?logo=tensorflow)](https://www.tensorflow.org/)
@@ -12,8 +11,6 @@
 This repository implements a **Privacy-Preserving Federated Learning (FL)** framework designed to classify brain tumors from MRI scans across decentralized hospital networks. By utilizing the **Flower (`flwr`)** framework, the system trains deep learning models on local edge devices (simulated hospital nodes) and aggregates their learning into a global model *without* ever centralizing sensitive patient data.
 
 Through rigorous architectural testing, an optimized, fine-tuned **EfficientNetB0** emerged as the champion model, achieving **96.14% global accuracy** while operating under strict hardware constraints (NVIDIA RTX 3050 Laptop GPU).
-
-
 
 ---
 
@@ -103,29 +100,29 @@ streamlit run app.py
 To simulate the federated network, you must run the server and clients concurrently. Open three separate terminal windows:
 
 * **Terminal 1 (Start the Aggregation Server):**
+
 ```bash
 python src/server_node.py
 
 ```
 
-
 * **Terminal 2 (Start Hospital Node A):**
+
 ```bash
 python src/client_node.py 1
 
 ```
 
-
 * **Terminal 3 (Start Hospital Node B):**
+
 ```bash
 python src/client_node.py 2
 
 ```
-
-
 
 ---
 
 ## ⚠️ Disclaimer
 
 This software is intended strictly for **educational and research purposes**. It demonstrates the efficacy of Federated Learning in medical contexts and is **not** an FDA-approved medical device. It should not be used for clinical diagnosis. Always consult a qualified radiologist or medical professional.
+
